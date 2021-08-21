@@ -1,11 +1,10 @@
-import React,{useState} from 'react';
-import './ExpenseFrom.css';
-
+import React, { useState } from "react";
+import "./ExpenseFrom.css";
 
 const ExpenseForm = (props) => {
-  const [enteredTitle, setEnteredTitle] = useState('');
-  const [enteredAmount, setEnteredAmount] = useState('');
-  const [enteredDate, setEnteredDate] = useState('');
+  const [enteredTitle, setEnteredTitle] = useState("");
+  const [enteredAmount, setEnteredAmount] = useState("");
+  const [enteredDate, setEnteredDate] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -13,15 +12,15 @@ const ExpenseForm = (props) => {
     const expenseData = {
       title: enteredTitle,
       amount: enteredAmount,
-      date: new Date(enteredDate)
-    }
+      date: new Date(enteredDate),
+    };
 
     props.onSaveExpenseData(expenseData);
-    
-    setEnteredTitle('');
-    setEnteredAmount('');
-    setEnteredDate('');
-  }
+
+    setEnteredTitle("");
+    setEnteredAmount("");
+    setEnteredDate("");
+  };
 
   return (
     <form onSubmit={submitHandler}>
@@ -31,7 +30,9 @@ const ExpenseForm = (props) => {
           <input
             type="text"
             value={enteredTitle}
-            onChange={(e) => { setEnteredTitle(e.target.value) }}
+            onChange={(e) => {
+              setEnteredTitle(e.target.value);
+            }}
           />
         </div>
         <div className="new-expense__control">
@@ -41,7 +42,9 @@ const ExpenseForm = (props) => {
             min="0.01"
             step="0.01"
             value={enteredAmount}
-            onChange={(e) => { setEnteredAmount(e.target.value) }}
+            onChange={(e) => {
+              setEnteredAmount(e.target.value);
+            }}
           />
         </div>
         <div className="new-expense__control">
@@ -50,18 +53,19 @@ const ExpenseForm = (props) => {
             type="date"
             min="2019-01-01"
             max="2022-12-31"
-            value = {enteredDate}
-            onChange={(e) => { setEnteredDate(e.target.value) }}
+            value={enteredDate}
+            onChange={(e) => {
+              setEnteredDate(e.target.value);
+            }}
           />
         </div>
       </div>
 
       <div className="new-expense__actions ">
-          <button> Add Expense </button>
-        </div>
-      
+        <button> Add Expense </button>
+      </div>
     </form>
-  )
-}
+  );
+};
 
 export default ExpenseForm;
