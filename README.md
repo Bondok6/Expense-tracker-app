@@ -8,10 +8,10 @@
 
 ## Built with
 
+- React.js
+- JavaScript
 - HTML
 - CSS
-- JavaScript
-- React.js
 
 <!-- ## Live Demo
 
