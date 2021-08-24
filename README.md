@@ -1,25 +1,17 @@
 # Expense Tracker 
 
-<!-- > ###  -->
+> ### This app helps you manage your money on the go. By understanding what you spend money on and how much you spend, you can see exactly where your cash is going.
 
 ![preview img](Preview.PNG)
 
 
-<!-- ## Built with
+## Built with
 
 - HTML
 - CSS
 - JavaScript
+- React.js
 
-## Additional Used
-
-- JQuery
-- Canvas
-- SVG
-- Bootstrap4
-- Google Fonts
-- Font Awesome
-
-## Live Demo
+<!-- ## Live Demo
 
 [Live Demo Link]() -->
