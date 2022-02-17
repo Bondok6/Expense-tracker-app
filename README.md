@@ -22,9 +22,9 @@
 
 To get a local copy up and running follow these simple example steps.
 
-`git clone git@github.com:Bondok6/math-magicians.git`
+`git clone git@github.com:Bondok6/Expense-tracker-app.git`
 
-Then `cd math-magicians`
+Then `cd Expense-tracker-app`
 
 Then `npm install` to install packages
 
