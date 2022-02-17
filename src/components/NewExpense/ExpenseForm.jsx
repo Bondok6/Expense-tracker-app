@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import "./ExpenseFrom.css";
+import React, { useState } from 'react';
+import './ExpenseFrom.css';
 
 const ExpenseForm = (props) => {
-  const [enteredTitle, setEnteredTitle] = useState("");
-  const [enteredAmount, setEnteredAmount] = useState("");
-  const [enteredDate, setEnteredDate] = useState("");
+  const [enteredTitle, setEnteredTitle] = useState('');
+  const [enteredAmount, setEnteredAmount] = useState('');
+  const [enteredDate, setEnteredDate] = useState('');
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -15,11 +15,13 @@ const ExpenseForm = (props) => {
       date: new Date(enteredDate),
     };
 
+    // Send Data to NewExpense.jsx
     props.onSaveExpenseData(expenseData);
 
-    setEnteredTitle("");
-    setEnteredAmount("");
-    setEnteredDate("");
+    // Clear Inputs
+    setEnteredTitle('');
+    setEnteredAmount('');
+    setEnteredDate('');
   };
 
   return (
