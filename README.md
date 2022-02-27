@@ -2,8 +2,9 @@
 
 > ### This app helps you manage your money on the go. By understanding what you spend money on and how much you spend, you can see exactly where your cash is going.
 
+![expense-tracker](https://user-images.githubusercontent.com/45231276/155891130-92f217b8-e0b8-4c9a-93f5-8ad3b0bcc7cf.png)
 
-https://user-images.githubusercontent.com/45231276/154448412-d613e5b1-459b-4c5c-a5ad-7c5a174e1781.mp4
+<!-- https://user-images.githubusercontent.com/45231276/154448412-d613e5b1-459b-4c5c-a5ad-7c5a174e1781.mp4 -->
 
 
 ## Built With
